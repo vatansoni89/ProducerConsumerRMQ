@@ -1,0 +1,8 @@
+RabbitMQ:
+  Commands:
+    Start: rabbitmq start_app
+    Stop: rabbitmqctl stop_app
+    Reset: rabbitmqctl reset
+    Add user test with psw test: rabbitmqctl add_user test test
+    Tags: rabbitmqctl set_user_tags test admin
+    Permission: rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
